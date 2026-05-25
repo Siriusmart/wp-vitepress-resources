@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body class="dark">
+    <div class="vp-layout">
+        <aside class="vp-sidebar">
+            <nav class="vp-sidebar-nav">
+                <div class="group">
+                    <section class="collapsible">
+                        <div class="nav-section-title">
+                            Word
+                        </div>
+                        <div class="nav-section-items">
+                            <div class="container">
+                                <a href="">Word</a>
+                            </div>
+                            <div class="container">
+                                <a href="">Word</a>
+                            </div>
+                            <div class="container">
+                                <a href="">Word</a>
+                            </div>
+                            <div class="container">
+                                <a href="">Word</a>
+                            </div>
+                            <div class="container">
+                                <a href="">Word</a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="group">
+                    <section class="collapsible">
+                        <div class="nav-section-title">
+                            Word
+                        </div>
+                        <div class="nav-section-items">
+                            <div class="container">
+                                <a href="">Word</a>
+                            </div>
+                            <div class="container">
+                                <a href="">Word</a>
+                            </div>
+                            <div class="container">
+                                <a href="">Word</a>
+                            </div>
+                            <div class="container">
+                                <a href="">Word</a>
+                            </div>
+                            <div class="container">
+                                <a href="">Word</a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="group">
+                    <section class="collapsible">
+                        <div class="nav-section-title">
+                            Word
+                        </div>
+                        <div class="nav-section-items">
+                            <div class="container">
+                                <a href="">Word</a>
+                            </div>
+                            <div class="container">
+                                <a href="">Word</a>
+                            </div>
+                            <div class="container">
+                                <a href="">Word</a>
+                            </div>
+                            <div class="container">
+                                <a href="">Word</a>
+                            </div>
+                            <div class="container">
+                                <a href="">Word</a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </nav>
+        </aside>
+        <div class="vp-doc-container">
+            <main class="vp-doc">
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <h4>Heading 4</h4>
+                <h5>Heading 5</h5>
+                <h6>Heading 6</h6>
+                <h1>Setext Heading 1</h1>
+                <h2>Setext Heading 2</h2>
+                <hr>
+                <h2>Paragraphs &#x26; Inline Formatting</h2>
+                <p>Plain paragraph text. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Two trailing spaces for a hard line break<br>
+                    Line two after hard break.</p>
+                <p><strong>Bold text</strong> and <strong>also bold</strong></p>
+                <p><em>Italic text</em> and <em>also italic</em></p>
+                <p><em><strong>Bold and italic</strong></em> and <em><strong>also bold and italic</strong></em></p>
+                <p><del>Strikethrough</del> (GFM)</p>
+                <p><code>inline code</code></p>
+                <p>This is a <sub>subscript</sub> and a <sup>superscript</sup>.</p>
+                <p>Escaped characters: * _ [ ] \ ` #</p>
+                <hr>
+                <h2>Links</h2>
+                <p><a href="https://example.com">Inline link</a></p>
+                <p><a href="https://example.com" title="Title text">Inline link with title</a></p>
+                <p><a href="https://example.com" title="Optional title">Reference link</a></p>
+                <p><a href="https://autolink.example.com">https://autolink.example.com</a></p>
+                <p><a href="mailto:email@example.com">email@example.com</a></p>
+                <p><a href="https://bare-autolink.example.com">https://bare-autolink.example.com</a> (GFM)</p>
+                <hr>
+                <h2>Images</h2>
+                <p><img src="https://placehold.co/400x200" alt="Alt text" title="Optional title"></p>
+                <p><img src="https://placehold.co/400x200" alt="Reference image" title="Reference image title"></p>
+                <hr>
+                <h2>Blockquotes</h2>
+                <blockquote>
+                    <p>Single-level blockquote.</p>
+                </blockquote>
+                <blockquote>
+                    <p>Blockquote with multiple paragraphs.</p>
+                    <p>Second paragraph inside the same blockquote.</p>
+                </blockquote>
+                <blockquote>
+                    <p>Nested blockquote level one.</p>
+                    <blockquote>
+                        <p>Nested blockquote level two.</p>
+                        <blockquote>
+                            <p>Nested blockquote level three.</p>
+                        </blockquote>
+                    </blockquote>
+                </blockquote>
+                <blockquote>
+                    <p>Blockquote containing <strong>bold</strong>, <em>italic</em>, and <code>code</code>.</p>
+                </blockquote>
+                <hr>
+                <h2>Code</h2>
+                <p><code>inline code span</code></p>
+                <pre><code>Indented code block (4 spaces)
+                        second line
+                    </code></pre>
+                <pre><code>Fenced code block, no language
+                    </code></pre>
+                <pre><code class="language-javascript">// Fenced code block with language
+                        function hello(name) {
+                        return `Hello, ${name}!`;
+                        }
+                    </code></pre>
+                <pre><code class="language-css">/* Another language */
+                        body {
+                        margin: 0;
+                        font-family: sans-serif;
+                        }
+                    </code></pre>
+                <hr>
+                <h2>Thematic Breaks</h2>
+                <hr>
+                <hr>
+                <hr>
+                <hr>
+                <h2>Lists</h2>
+                <h3>Unordered</h3>
+                <ul>
+                    <li>Item one</li>
+                    <li>Item two</li>
+                    <li>Item three</li>
+                </ul>
+                <ul>
+                    <li>Asterisk bullet one</li>
+                    <li>Asterisk bullet two</li>
+                </ul>
+                <ul>
+                    <li>Plus bullet one</li>
+                    <li>Plus bullet two</li>
+                </ul>
+                <ul>
+                    <li>Parent item
+                        <ul>
+                            <li>Nested item
+                                <ul>
+                                    <li>Deeply nested item</li>
+                                </ul>
+                            </li>
+                            <li>Another nested item</li>
+                        </ul>
+                    </li>
+                    <li>Back to top level</li>
+                </ul>
+                <h3>Ordered</h3>
+                <ol>
+                    <li>
+                        <p>First item</p>
+                    </li>
+                    <li>
+                        <p>Second item</p>
+                    </li>
+                    <li>
+                        <p>Third item</p>
+                    </li>
+                    <li>
+                        <p>Ordered with nested unordered</p>
+                        <ul>
+                            <li>Nested bullet</li>
+                            <li>Another nested bullet</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>Back to ordered</p>
+                    </li>
+                    <li>
+                        <p>Loose list item — paragraphs inside each item.</p>
+                    </li>
+                    <li>
+                        <p>Another loose list item.</p>
+                        <p>A second paragraph inside this list item.</p>
+                    </li>
+                </ol>
+                <h3>Task Lists (GFM)</h3>
+                <ul class="contains-task-list">
+                    <li class="task-list-item"><input type="checkbox" checked disabled> Completed task</li>
+                    <li class="task-list-item"><input type="checkbox" disabled> Incomplete task</li>
+                    <li class="task-list-item"><input type="checkbox" checked disabled> Another completed task</li>
+                    <li class="task-list-item"><input type="checkbox" disabled> Another incomplete task
+                        <ul class="contains-task-list">
+                            <li class="task-list-item"><input type="checkbox" checked disabled> Nested completed</li>
+                            <li class="task-list-item"><input type="checkbox" disabled> Nested incomplete</li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr>
+                <h2>Tables (GFM)</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th align="left">Left aligned</th>
+                            <th align="center">Center aligned</th>
+                            <th align="right">Right aligned</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td align="left">Cell</td>
+                            <td align="center">Cell</td>
+                            <td align="right">Cell</td>
+                        </tr>
+                        <tr>
+                            <td align="left">Cell</td>
+                            <td align="center">Cell</td>
+                            <td align="right">Cell</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Required</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>id</code></td>
+                            <td>string</td>
+                            <td>yes</td>
+                            <td>Unique identifier</td>
+                        </tr>
+                        <tr>
+                            <td><code>name</code></td>
+                            <td>string</td>
+                            <td>yes</td>
+                            <td>Human-readable label</td>
+                        </tr>
+                        <tr>
+                            <td><code>count</code></td>
+                            <td>number</td>
+                            <td>no</td>
+                            <td>Defaults to <code>0</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>tags</code></td>
+                            <td>array</td>
+                            <td>no</td>
+                            <td>List of string tags</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <hr>
+                <h2>HTML Blocks</h2>
+                <div>
+                    Raw HTML block element.
+                </div>
+                <details>
+                    <summary>Summary / disclosure widget</summary>
+                    Hidden content revealed on click.
+                </details>
+                <p>Inline HTML: <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy.</p>
+                <p>Text with a <mark>highlighted span</mark> inside.</p>
+                <p>Text with <abbr title="GitHub Flavored Markdown">GFM</abbr> abbreviation.</p>
+                <hr>
+                <h2>Footnotes (GFM)</h2>
+                <p>Here is a sentence with a footnote.<sup><a href="#user-content-fn-1" id="user-content-fnref-1"
+                            data-footnote-ref aria-describedby="footnote-label">1</a></sup></p>
+                <p>Another sentence with a named footnote.<sup><a href="#user-content-fn-note"
+                            id="user-content-fnref-note" data-footnote-ref aria-describedby="footnote-label">2</a></sup>
+                </p>
+                <hr>
+                <h2>Definition Lists</h2>
+                <p>Not in CommonMark or GFM spec, but supported by some remark plugins.</p>
+                <hr>
+                <h2>Nested &#x26; Mixed</h2>
+                <blockquote>
+                    <p>Blockquote containing a list:</p>
+                    <ul>
+                        <li>Item one</li>
+                        <li>Item two</li>
+                    </ul>
+                    <p>And a code block:</p>
+                    <pre><code class="language-js">const x = 1;
+                        </code></pre>
+                </blockquote>
+                <ol>
+                    <li>
+                        <p>Ordered item with a blockquote inside:</p>
+                        <blockquote>
+                            <p>Blockquote nested in a list item.</p>
+                        </blockquote>
+                    </li>
+                    <li>
+                        <p>Ordered item with code:</p>
+                        <pre><code class="language-bash">echo "hello"
+                            </code></pre>
+                    </li>
+                </ol>
+                <section data-footnotes class="footnotes">
+                    <h2 class="sr-only" id="footnote-label">Footnotes</h2>
+                    <ol>
+                        <li id="user-content-fn-1">
+                            <p>This is the first footnote. <a href="#user-content-fnref-1" data-footnote-backref=""
+                                    aria-label="Back to reference 1" class="data-footnote-backref">↩</a></p>
+                        </li>
+                        <li id="user-content-fn-note">
+                            <p>This is a named footnote with more detail. <a href="#user-content-fnref-note"
+                                    data-footnote-backref="" aria-label="Back to reference 2"
+                                    class="data-footnote-backref">↩</a></p>
+                        </li>
+                    </ol>
+                </section>
+            </main>
+        </div>
+    </div>
+    <script src="./script.js">
+    </script>
+</body>
+
+</html>

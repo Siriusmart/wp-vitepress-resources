@@ -1,0 +1,29 @@
+{
+    "name": "wp-vitepress-resources",
+    "version": "0.1.0",
+    "description": "Required resources for wp-vitepress-*",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "scripts": {
+        "build": "tsc",
+        "prepublishOnly": "npm run build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/siriusmart/wp-vitepress-resources.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "AGPL-3.0-only",
+    "type": "commonjs",
+    "bugs": {
+        "url": "https://github.com/siriusmart/wp-vitepress-resources/issues"
+    },
+    "homepage": "https://github.com/siriusmart/wp-vitepress-resources#readme",
+    "devDependencies": {
+        "@types/node": "^24.10.9"
+    },
+    "dependencies": {
+        "webpan": "*"
+    }
+}
