@@ -1,10 +1,9 @@
-import path = require("path");
-import fs = require("node:fs/promises");
-import webpan = require("webpan")
-import type { ProcessorOutputRaw } from "webpan/dist/types/processorStates";
+import Processor from "webpan/dist/types/processor.js"
+import { ProcessorOutputRaw } from "webpan/dist/types/processorStates.js"
+import fs from "node:fs/promises"
+import path from "node:path"
 
-
-export default class VitepressResourcesProcessor extends webpan.Processor {
+export default class VitepressResourcesProcessor extends Processor {
     async build(content: Buffer | "dir"): Promise<ProcessorOutputRaw> {
         if (content !== "dir") {
             throw new Error("Bad rule: wp-vitepress-resources can only be used on directories.")

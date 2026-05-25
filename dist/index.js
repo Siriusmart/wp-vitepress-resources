@@ -1,9 +1,7 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const path = require("path");
-const fs = require("node:fs/promises");
-const webpan = require("webpan");
-class VitepressResourcesProcessor extends webpan.Processor {
+import Processor from "webpan/dist/types/processor.js";
+import fs from "node:fs/promises";
+import path from "node:path";
+export default class VitepressResourcesProcessor extends Processor {
     async build(content) {
         if (content !== "dir") {
             throw new Error("Bad rule: wp-vitepress-resources can only be used on directories.");
@@ -16,5 +14,4 @@ class VitepressResourcesProcessor extends webpan.Processor {
         };
     }
 }
-exports.default = VitepressResourcesProcessor;
 //# sourceMappingURL=index.js.map
