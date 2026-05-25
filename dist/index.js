@@ -1,6 +1,8 @@
 import Processor from "webpan/dist/types/processor.js";
 import fs from "node:fs/promises";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
+const dir = path.dirname(fileURLToPath(import.meta.url));
 export default class VitepressResourcesProcessor extends Processor {
     async build(content) {
         if (content !== "dir") {
@@ -8,8 +10,8 @@ export default class VitepressResourcesProcessor extends Processor {
         }
         return {
             relative: new Map([
-                [path.join(this.filePath(), "vp-script.js"), { buffer: await fs.readFile(path.join(__dirname, "../resources/script.js")), priority: this.settings().priority ?? 0 }],
-                [path.join(this.filePath(), "vp-styles.css"), { buffer: await fs.readFile(path.join(__dirname, "../resources/styles.css")), priority: this.settings().priority ?? 0 }]
+                [path.join(this.filePath(), "vp-script.js"), { buffer: await fs.readFile(path.join(dir, "../resources/script.js")), priority: this.settings().priority ?? 0 }],
+                [path.join(this.filePath(), "vp-styles.css"), { buffer: await fs.readFile(path.join(dir, "../resources/styles.css")), priority: this.settings().priority ?? 0 }]
             ]),
         };
     }
