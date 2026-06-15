@@ -12,9 +12,11 @@ document.querySelectorAll(".nav-section-title").forEach(title => {
         if (hidden) {
             items.setAttribute("hidden", "true")
             span.style.rotate = "0deg"
+            title.parentElement.classList.add("collapsed")
         } else {
             items.removeAttribute("hidden")
             span.style.rotate = "90deg"
+            title.parentElement.classList.remove("collapsed")
         }
     })
 })
