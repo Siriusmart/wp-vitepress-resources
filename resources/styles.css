@@ -83,6 +83,7 @@ body {
 
 
     .nav-section-title {
+        user-select: none;
         color: var(--vp-c-text-2);
         font-weight: 500;
         flex-grow: 1;
@@ -108,17 +109,21 @@ body {
         margin-bottom: 5px;
     }
 
-    .nav-section-items:not(.nav-section-items *) {
-        margin-bottom: 20px;
+    .group:not(.nav-section-items *) {
+        padding-bottom: 10px;
     }
 
     .nav-section-items a:hover {
         color: var(--vp-c-indigo-1);
     }
 
+    .nav-section-title:hover > .chevron {
+        opacity: 1;
+        color: var(--vp-c-red-1);
+    }
+
     .group .group .nav-section-items {
         padding-left: 15px;
-        padding-bottom: 1px;
         margin-left: 1px;
 
         border-left: 5px solid var(--vp-c-indigo-2);
