@@ -125,6 +125,10 @@ body {
         color: var(--vp-c-text-2);
     }
 
+    .selected a {
+        color: var(--vp-c-indigo-1);
+    }
+
     .group .group .nav-section-items {
         padding-left: 15px;
         margin-left: 1px;
