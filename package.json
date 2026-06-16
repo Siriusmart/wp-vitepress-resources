@@ -1,6 +1,6 @@
 {
     "name": "wp-vitepress-resources",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "description": "Required resources for wp-vitepress-*",
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
