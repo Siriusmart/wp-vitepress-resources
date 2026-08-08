@@ -36,6 +36,11 @@
     --vp-c-bg-alt: #161618;
     --vp-c-bg-elv: #202127;
     --vp-c-bg-soft: #202127;
+
+    --vp-topbar-height: 64px;
+    --vp-navbar-width: 270px;
+    --vp-navbar-padding: 30px;
+    --vp-navbar-text-indent: 6px;
 }
 
 body {
@@ -64,14 +69,37 @@ body {
     box-sizing: border-box;
     background-color: var(--vp-c-bg-alt);
     height: 100vh;
-    width: 270px;
+    width: var(--vp-navbar-width);
     display: block;
     overflow: scroll;
-    padding: 35px;
+    padding-left: var(--vp-navbar-padding);
+    padding-right: var(--vp-navbar-padding);
+    flex-shrink: 0;
+    position: relative;
+
+    .vp-sidebar-topbar {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: var(--vp-topbar-height);
+        border-bottom: 1px solid var(--vp-c-divider);
+        position: sticky;
+        top: 0;
+        background-color: var(--vp-c-bg-alt);
+        z-index: 100;
+        padding-left: var(--vp-navbar-text-indent);
+        padding-right: var(--vp-navbar-text-indent);
+
+        a {
+            color: var(--vp-c-text-1);
+            text-decoration: none;
+        }
+    }
 
     /* top level */
     .nav-section-title:not(.nav-section-items *) {
         padding-top: 10px;
+        padding-left: var(--vp-navbar-text-indent);
+        padding-right: var(--vp-navbar-text-indent);
         font-weight: 700;
         color: var(--vp-c-text-1);
         width: 100%;
@@ -79,6 +107,9 @@ body {
 
     .nav-section-items:not(.nav-section-items *) {
         margin-top: -10px;
+        padding-left: var(--vp-navbar-text-indent);
+        padding-right: var(--vp-navbar-text-indent);
+        padding-bottom: 6px;
     }
 
     :not(.collapsed)>.nav-section-title {
@@ -189,15 +220,33 @@ body {
 .vp-doc-container {
     max-width: 100%;
     flex-grow: 1;
-    flex-shrink: 0;
     overflow: scroll;
     box-sizing: border-box;
-    padding: 50px 10px;
     height: 100vh;
 
+    .vp-doc-topbar {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: var(--vp-topbar-height);
+        border-bottom: 1px solid var(--vp-c-divider);
+        position: sticky;
+        top: 0;
+        background-color: var(--vp-c-bg);
+        z-index: 100;
+        padding-left: 30px;
+        padding-right: 30px;
+
+        a {
+            color: var(--vp-c-text-1);
+            text-decoration: none;
+        }
+    }
+
     .vp-doc {
+        padding: 30px;
         max-width: 688px;
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
         display: block;
 
         hr {
