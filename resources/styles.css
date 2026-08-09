@@ -41,6 +41,8 @@
     --vp-navbar-width: 270px;
     --vp-navbar-padding: 30px;
     --vp-navbar-text-indent: 6px;
+
+    --vp-desktop-min-width: 950px;
 }
 
 body {
@@ -65,7 +67,11 @@ body {
     display: flex;
 }
 
+
 .vp-sidebar {
+    transition: transform 0.15s ease-out;
+    z-index: 200;
+
     box-sizing: border-box;
     background-color: var(--vp-c-bg-alt);
     height: 100vh;
@@ -136,6 +142,10 @@ body {
         line-height: 30px;
         font-size: 14px;
         transition: color .25s;
+    }
+
+    .nav-selected a {
+        color: var(--vp-c-indigo-1);
     }
 
     .nav-section-items .nav-section-items {
@@ -228,17 +238,35 @@ body {
         font-weight: 600;
         font-size: 16px;
         line-height: var(--vp-topbar-height);
-        border-bottom: 1px solid var(--vp-c-divider);
+        border-bottom: 2px solid var(--vp-c-gutter);
         position: sticky;
         top: 0;
         background-color: var(--vp-c-bg);
         z-index: 100;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: calc(var(--vp-navbar-padding) + var(--vp-navbar-text-indent));
+        padding-right: calc(var(--vp-navbar-padding) + var(--vp-navbar-text-indent));
+        height: var(--vp-topbar-height);
 
-        a {
+        .vp-doc-topbar-title {
             color: var(--vp-c-text-1);
             text-decoration: none;
+            display: none;
+        }
+    }
+
+    .vp-doc-mobile-bar {
+        border-bottom: 1px solid var(--vp-c-gutter);
+        background-color: var(--vp-c-bg);
+        line-height: 47px;
+        padding-left: calc(var(--vp-navbar-padding) + var(--vp-navbar-text-indent));
+        padding-right: calc(var(--vp-navbar-padding) + var(--vp-navbar-text-indent));
+        display: none;
+        position: sticky;
+        top: calc(var(--vp-topbar-height) + 2px);
+        z-index: 100;
+
+        #vp-mobile-toc-button {
+            cursor: pointer;
         }
     }
 
@@ -422,5 +450,34 @@ body {
         mark {
             color: black;
         }
+    }
+}
+
+#vp-mobile-backdrop {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 150;
+    background-color: black;
+    opacity: 0.5;
+}
+
+/* vp-desktop-min-width */
+@media only screen and (max-width: 950px) {
+    .vp-sidebar {
+        transform: translateX(calc(-1 * var(--vp-navbar-width)));
+        position: absolute;
+        display: block;
+    }
+
+    .vp-doc-topbar-title {
+        display: block !important;
+    }
+
+    .vp-doc-mobile-bar {
+        display: block !important;
     }
 }
