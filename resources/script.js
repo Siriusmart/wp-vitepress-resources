@@ -34,7 +34,13 @@ document.getElementById("vp-mobile-toc-button").onclick = () => {
     backdrop.style.display = "block";
 };
 
-backdrop.onclick = window.matchMedia("(width <= 950px)").onchange = (ev) => {
+backdrop.onclick = () => {
+    document.querySelector(".vp-sidebar-nav").style.marginTop = "";
+    document.querySelector(".vp-sidebar").style.transform = "";
+    backdrop.style.display = "none";
+}
+
+window.matchMedia("(width <= 950px)").onchange = (ev) => {
     if (!ev.matches) {
         document.querySelector(".vp-sidebar-topbar").style.display = "";
         document.querySelector(".vp-sidebar-nav").style.marginTop = "";
