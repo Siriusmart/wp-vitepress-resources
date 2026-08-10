@@ -35,7 +35,6 @@ document.getElementById("vp-mobile-toc-button").onclick = () => {
 };
 
 backdrop.onclick = () => {
-    document.querySelector(".vp-sidebar-nav").style.marginTop = "";
     document.querySelector(".vp-sidebar").style.transform = "";
     backdrop.style.display = "none";
 }

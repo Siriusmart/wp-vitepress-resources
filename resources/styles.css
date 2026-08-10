@@ -480,4 +480,12 @@ body {
     .vp-doc-mobile-bar {
         display: block !important;
     }
+
+    .vp-doc-mobile-bar {
+        top: 0 !important;
+    }
+
+    .vp-doc-topbar {
+        position: relative !important;
+    }
 }
