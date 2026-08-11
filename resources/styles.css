@@ -233,6 +233,7 @@ body {
     overflow: scroll;
     box-sizing: border-box;
     height: 100vh;
+    padding-bottom: 5em;
 
     .vp-doc-topbar {
         font-weight: 600;
@@ -463,6 +464,53 @@ body {
     z-index: 150;
     background-color: black;
     opacity: 0.5;
+}
+
+.vp-beforenext {
+    display: grid;
+    border-top: 1px solid var(--vp-c-divider);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-column-gap: 16px;
+}
+
+.vp-beforebox:hover,
+.vp-afterbox:hover {
+    border-color: var(--vp-c-indigo-1);
+}
+
+.vp-beforebox,
+.vp-afterbox {
+    transition: border-color 0.15s !important;
+    padding: 11px 16px 13px;
+    border-radius: 8px;
+    border: 1px solid var(--vp-c-divider);
+    text-decoration: none !important;
+    height: min-content;
+}
+
+.vp-before-title,
+.vp-after-title {
+    line-height: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--vp-c-text-2);
+}
+
+.vp-before-name,
+.vp-after-name {
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--vp-c-indigo-1);
+}
+
+.vp-afterbox {
+    text-align: right;
+}
+
+.vp-beforenext {
+    margin-top: 3em;
+    padding-top: 1.5em;
 }
 
 /* vp-desktop-min-width */
