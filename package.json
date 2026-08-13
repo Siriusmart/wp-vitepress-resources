@@ -1,6 +1,6 @@
 {
     "name": "wp-vitepress-resources",
-    "version": "0.1.11",
+    "version": "0.1.12",
     "description": "Required resources for wp-vitepress-*",
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
@@ -21,7 +21,7 @@
     },
     "homepage": "https://github.com/siriusmart/wp-vitepress-resources#readme",
     "devDependencies": {
-        "@types/node": "^24.10.9"
+        "@types/node": "^26.2.0"
     },
     "dependencies": {
         "webpan": "*"
